@@ -14,9 +14,7 @@ class QLearningAgent:
 
     # <s, a, r, s'> 샘플로부터 큐함수 업데이트
     def learn(self, state, action, reward, next_state):
-        state, next_state = str(state), str(next_state)
-
-        self.q_table[state][action] += self.step_size * 1
+        a = 1
 
     # 큐함수에 의거하여 입실론 탐욕 정책에 따라서 행동을 반환
     def get_action(self, state):

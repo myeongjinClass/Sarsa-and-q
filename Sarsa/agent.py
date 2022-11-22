@@ -15,9 +15,7 @@ class SARSAgent:
 
     # <s, a, r, s', a'>의 샘플로부터 큐함수를 업데이트
     def learn(self, state, action, reward, next_state, next_action):
-        new_q=0
-
-        self.q_table[state][action] = new_q
+        a = 1
 
     # 입실론 탐욕 정책에 따라서 행동을 반환
     def get_action(self, state):
